@@ -1,0 +1,19 @@
+#this file can be used to change all configuration properties
+#spring.mvc.view.prefix=/WEB-INF/jsp/
+#spring.mvc.view.suffix=.jsp
+server:
+  port: 8080
+  servlet:
+    context-path: /test
+
+srping:
+  datasource:
+    name: test
+    url: jdbc:mysql://34.125.105.41:3306/sample
+    username: remoteadmin
+    password: Password1!
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-location: classpath:DAO/*.xml
+  type-aliases-package: com.frist.maven.bean
